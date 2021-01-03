@@ -9,11 +9,16 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
-            .font(.system(size: 70))
+        HStack{
+            MyVstackView()
+            MyVstackView()
+            MyVstackView()
+        }
+        .padding(.all, 10)
+        .background(Color.yellow)
     }
 }
+
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
